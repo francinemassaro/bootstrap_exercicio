@@ -2,172 +2,269 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treino Bootstrap</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Imagens</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-</head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Letra-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  </head>
 <!--#b48241 cor que gostei-->
 <!-- #1a3344; outra cor que gostei-->
+
 <body>
 
-<!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1d1d1c">
-    <a class="navbar-brand" href="#">.  Fran</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #052230">
+    <a class="navbar-brand href=" index.html" style="margin-left: 1rem;"> Fran</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(Página atual)</span></a>
-        <a class="nav-item nav-link" href="#">Destaques</a>
+        <a class="nav-item nav-link active" href="#">Inicio</a>
+        <a class="nav-item nav-link" href="#destaques">Destaques</a>
+        <a class="nav-item nav-link" href="#">Localização</a>
         <a class="nav-item nav-link" href="#">teste</a>
-        <a class="nav-item nav-link" href="#">teste</a>
-        <a class="nav-item nav-link" href="#">teste</a>
-        <!--<a class="nav-item nav-link disabled" href="#">Desativado</a> -->
+        <a class="nav-item nav-link" href="#contato">Contato</a>
       </div>
     </div>
   </nav>
+
   
   <!--Acrescentando Carousel-->
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="Assets/Imagens/14-12 itaipava/andorinha voando cortada.jpg" alt="Primeiro Slide">
+        <img class="d-block w-100" src="Assets/Imagens/14-12 itaipava/andorinha1.JPG" alt="Andorinha parada">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Assets/Imagens/14-12 itaipava/andorinha asas abertas cortada 2.jpg" alt="Segundo Slide">
+        <img class="d-block w-100" src="Assets/Imagens/14-12 itaipava/andorinha2.jpg" alt="Andorinha voando">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+        <img class="d-block w-100" src="Assets/Imagens/14-12 itaipava/andorinha3.jpg" alt="Andorinha retornando do voo">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="Assets/Imagens/14-12 itaipava/andorinha4.JPG" alt="Andorinha pousando">
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
+      <span class="sr-only"></span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
+      <span class="sr-only"></span>
     </a>
   </div>
 
-  <hr>
+  <!-- Jumbotron-->
+  <div class="jumbotron jumbotron-fluid p-4" style="background-color: rgb(244, 247, 248);">
+    <div class="container">
+      <h1 class="display-4">Fotos de minha autoria</h1>
+      <p class="lead">Desde criança sempre fui apaixonada por natureza, e quando uma amiga me deu uma câmera, comecei a
+        registrar algumas especies. Resolvi criar essa página para mostrar alguns dos clics que eu mais gosto. </p>
+    </div>
+  </div>
+
+
   <!-- cards e começo do div container-->
-<div class=container>
-  <div class="card-group">
-    <div class="card">
-      <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+  <div class=container id="destaques">
+    <div class="card-group">
+      <div class="card m-2">
+        <img class="card-img-top" src="Assets/Imagens/11-12/DSC_1229b.jpg"
+          alt="Imagem de uma ave chamada fim-fim sem ação">
+        <div class="card-body">
+          <h5 class="card-title">fim-fim (Euphonia chlorotica)</h5>
+          <p class="card-text">Foto realizada em Santa Rosa de Viterbo - SP</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Para saber mais <a href="https://www.wikiaves.com.br/3209371&u=31337&t=u">clique
+              aqui.</a> </small>
+        </div>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card m-2">
+        <img class="card-img-top" src="Assets/Imagens/15-10/DSC_0549.JPG" alt="Imagem de um calango em um tronco">
+        <div class="card-body">
+          <h5 class="card-title">Calango (Tropidurus torquatus)</h5>
+          <p class="card-text">Foto realizada próximo a cachoeira Mario Ribeiro em Santa Rosa de Viterbo - SP </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Registro 15/10/18 - Para saber mais <a
+              href="https://pt.wikipedia.org/wiki/Tropidurus_torquatus">clique aqui</a> </small>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img class="card-img-top" src="Assets/Imagens/15-10/DSC_0608.JPG"
+          alt="Imagem de uma ave chamada Maria Cavaleira comendo">
+        <div class="card-body">
+          <h5 class="card-title">Maria Cavaleira (Myiarchus ferox)</h5>
+          <p class="card-text">Foto realizada em Santa Rosa de Viterbo - SP</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Para saber mais <a href="https://www.wikiaves.com.br/3147735&u=31337&t=u">clique
+              aqui.</a> </small>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+
+    <!--Outro grupo de card-->
+    <div class="card-group">
+      <div class="card m-2">
+        <img class="card-img-top" src="Assets/Imagens/18-10 itaipava/_SC_0683b.jpg"
+          alt="Imagem de um Martim-pescador-pequeno">
+        <div class="card-body">
+          <h5 class="card-title">Martim-pescador-pequeno (Chloroceryle americana)</h5>
+          <p class="card-text">Registro feito na barragem Itaipava em Santa Rosa de Viterbo - SP.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Para saber mais <a href="https://www.wikiaves.com.br/3152074&u=31337&t=u">clique
+              aqui.</a> </small>
+        </div>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card m-2">
+        <img class="card-img-top" src="Assets/Imagens/18-10 itaipava/_SC_0714b.jpg"
+          alt="Registro de um tucanaçu e duas andorinhas">
+        <div class="card-body">
+          <h5 class="card-title">Tucanaçu (Ramphastos toco Statius Muller)</h5>
+          <p class="card-text">Registro de um tucanaçu e duas andorinhas feito próximo a barragem Itaipava em Santa Rosa
+            de Viterbo</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Para saber mais <a href="https://www.wikiaves.com.br/3152056&u=31337&t=u">clique
+              aqui.</a> </small>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img class="card-img-top" src="Assets/Imagens/21-10/DSC_0816.JPG" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Nina, gata que mora com meus pais</h5>
+          <p class="card-text">Registro realizado na casa dos meus pais em Santa Rosa de Viterbo - SP </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Feito 21/10/18</small>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+
+    <!--Mais um grupo de card-->
+    <div class="card-group">
+      <div class="card m-2">
+        <img class="card-img-top" src="Assets/Imagens/USP/DSC_0737.JPG" alt="Imagem de um Bugio">
+        <div class="card-body">
+          <h5 class="card-title">Bugio</h5>
+          <p class="card-text">Registro feito na USP Ribeirão Preto - SP em 15/10/18</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"></small>
+        </div>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card m-2">
+        <img class="card-img-top" src="Assets/Imagens/SFX/DSC_1636b.jpg" alt="Imagem de um beija-flor">
+        <div class="card-body">
+          <h5 class="card-title">beija-flor</h5>
+          <p class="card-text">Registro feito em sítio Cheiro de Mato em São Francisco Xavier - SP </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Para saber mais <a href="https://www.wikiaves.com.br/4234907&u=31337&t=u">clique
+              aqui.</a> </small>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img class="card-img-top" src="Assets/Imagens/SFX/DSC_1616b.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Canário-Terra (Sicalis flaveola)</h5>
+          <p class="card-text">Registro feito em sítio Cheiro de Mato em São Francisco Xavier - SP </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Para saber mais <a href="https://www.wikiaves.com.br/4234906&u=31337&t=u">clique
+              aqui.</a></small>
+        </div>
       </div>
     </div>
   </div>
 
-  <!--Outro grupo de card-->
-  <div class="card-group">
-    <div class="card">
-      <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
-      </div>
-    </div>
-  </div>
 
-  <!--Mais um grupo de card-->
-  <div class="card-group">
-    <div class="card">
-      <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
-      </div>
+  
+  <hr>
+  <div class="container mt-4  ">
+    <div class="row">
+        <div class="col-lg-6 align-self-center text-center">
+           
+          <p style="font-family: 'Noto Sans JP', sans-serif;">Como não é possível falar em amor a natureza sem defendê-la, fica o vídeo ao lado. 
+            Ninguém quer mudar, afinal estacionar é comodo, mas se quisermos continuar vendo animais e continuar fazendo parte desse mundo, temos também que aprender a respeitar os outros seres. A própria pandemia está relacionada com consumo de animais e é apenas questão de tempo até desencadearmos outra, talvez alguma muito pior. Os insetos estão sumindo. A Amazônia está virando pasto e plantação de soja, sendo que 79% da soja do mundo vai para ração de animais que serão assassinados posteriormente. Enquanto isso, pessoas morrem de fome. Está na hora de reavaliarmos o consumo, está na hora de assumir responsabilidade. Tudo de ruim do mundo e essa nova extinção em massa, tem a ver com nossa escolha diária, sendo assim, <span style="font-weight: 600;">mova-se!</span> <span style="font-size: 18px; font-weight: 500;">Questione!</span></p>
+        </div>
+        <div class="col-lg-6"><iframe width="560" height="315" src="https://www.youtube.com/embed/JIXBAI0hvEg?start=104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
-    <div class="card">
-      <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
-      </div>
-    </div>
-  </div>
 </div>
 
 
 
+<!--Formulario -->
+  <hr>
+  <div class="container col-md-6" style="font-family: 'Inconsolata', monospace;">
+    <h3 id="formulario" class="text-center p-2"> Entre em contato comigo</h3>
+    <form class="p-2 text-monospace">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Nome</label>
+        <input type="nome" class="form-control" id="exampleFormControlInput1" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Endereço de email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Mensagem</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="button" class="btn btn-outline-secondary btn-sm mt-2">Enviar</button>
+  </div>
+
+
+  <!--Rodapé-->
+  <footer id="contato">
+    <div class="container">
+      <hr>
+      <div class="d-flex justify-content-center">
+        <a href="https://www.facebook.com/francinemassaro" class="p-3">
+          <img style="height: 50px; width: 50px;" src="Assets/Imagens/iconfinder_BW_Facebook_glyph_svg_5305154.png"
+            alt="Logo do Facebook">
+        </a>
+
+        <a href="https://www.linkedin.com/in/francine-massaro-73813119b/" class="p-3">
+          <img style="height: 50px; width: 50px;" src="Assets/Imagens/iconfinder_BW_Linkedin_glyph_svg_5305157.png"
+            alt="Logo do Linkedin">
+        </a>
+
+        <a href="https://www.instagram.com/francine0/" class="p-3"">
+            <img style=" height: 50px; width: 50px;" src="Assets/Imagens/iconfinder_Instagram_glyph_svg_5335781.png"
+          alt="Logo do Intagram">
+        </a>
+      </div>
+      <p style="font-size: 11px; text-align: center;">Todos os direitos reservados: Francine Massaro &copy</p>
+    </div>
+  </footer>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </html>
